@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import instance from "./axios";
+export const baseUrl = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl, posterPath }) {
   const [movies, setMovies] = useState([]);
-  const baseUrl = "https://image.tmdb.org/t/p/original/";
   useEffect(() => {
     let getMovies = async () => {
       let request = await instance.get(fetchUrl);
