@@ -2,10 +2,12 @@ import React from "react";
 import "./App.css";
 import requests from "./api";
 import Row from "./row";
+import Nav from "./nav";
 import Banner from "./banner";
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Banner />
 
       <Row

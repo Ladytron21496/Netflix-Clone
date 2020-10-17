@@ -4,7 +4,34 @@ html {
 * {
   margin: 0;
 }
-
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 15px;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.nav-logo {
+  left: 0;
+  width: 80px;
+  padding-left: 20px;
+  object-fit: contain;
+}
+.nav-avatar {
+  position: relative;
+  top: -8px;
+  right: 32px;
+  height: 30px;
+  object-fit: contain;
+}
+.header-black {
+  background-color: black;
+}
 .row {
   margin-left: 20px;
 }
