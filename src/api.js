@@ -1,4 +1,4 @@
-const apiKey = "196aad360ab507baeff49e74b3cbe8e4";
+const apiKey = process.env.REACT_APP_SECRET_KEY;
 
 export const requests = {
   trending: `/trending/all/day?api_key=${apiKey}`,
