@@ -75,6 +75,7 @@ html {
   color: white;
   height: 450px;
   object-fit: contain;
+  background-position: center center;
 }
 .title {
   margin-left: 20px;
@@ -121,4 +122,24 @@ html {
   font-size: 0.8rem;
   max-width: 360px;
   height: 80px;
+}
+
+@media only screen and (min-width: 900px) {
+  .banner {
+    background-position: unset;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 99999px;
 }
